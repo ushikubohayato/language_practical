@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h1>シンプルなサンプルページ</h1>
+    <h1 id="top">シンプルなサンプルページ</h1>
     <p>よく使うHTMLタグだけで作った、とてもシンプルな画面です。</p>
 
     <div id="menu">
@@ -56,11 +56,11 @@
     <div id="contact">
         <h2>お問い合わせ</h2>
         <form action="#">
-            <span>お名前:</span>
+            <label for="name">お名前:</label>
             <input type="text" name="name"><br>
-            <span>お問い合わせ内容:</span><br>
+            <label for="content">お問い合わせ内容:</label><br>
             <textarea name="content" style="width: 30em; height:5em ;"></textarea><br>
-            <input type="submit">
+            <input type="submit" value="送信">
         </form>
   
         <a href="#top">TOPへ</a>
