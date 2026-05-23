@@ -1,0 +1,45 @@
+<!DOCTYPE html><!--この文書がHTML5で書かれていることを宣言-->
+
+<html><!--HTML文書の開始 -->
+
+<head><!--ページの設定や外部ファイルの読み込みなどを行う部分 -->
+    <title>株式会社アールピーシー</title><!--ブラウザのタブに表示されるタイトル -->
+    <meta charset="UTF-8" /><!--文字コードをUTF-8(日本語を正しく扱える設定)-->
+    <!--
+        スマホ・タブレットなどの画面幅に合わせてページを正しく縮尺表示するための設定。
+        width=device-width ... デバイスの実際の画面恥をそのまま使う(拡大しない)
+        inital-scale=1.0 ... 表示開始時の拡大率を1(100%)にする
+    -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="1-responsive.css" /><!--外部CSSファイル「6-flex.css」を読み込む -->
+</head>
+
+<body><!--ページに実際に表示される内容を記述する部分 -->
+    <div class="layout"><!--ページ全体のレイアウトを管理するコンテナ(グリッドレイアウト用) -->
+
+        <header class="site-header"><!--ページ上部のヘッダー部分 -->
+            ヘッダー<!--表示されるテキスト内容(ヘッダーと表示)-->
+        </header>
+
+        <aside class="sidebar"><!--サイドメニュー(ナビゲーションなどを配置する領域) -->
+            <div class="sidebar_head">ジャンプ先</div>
+            <nav class="sidebar_nav">
+                <ul class="menu">
+                    <li><a href="#menu1">メニュー1</a></li>
+                    <li><a href="#menu2">メニュー2</a></li>
+                    <li><a href="#menu3">メニュー3</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main" id="main"><!--ページのメインコンテンツを表示する領域。id="main"はリンクなどに利用可能 -->
+                メイン<!--表示テキスト:メイン-->
+        </main><!-- メインコンテンツ領域の終了-->
+
+        <footer class="site-footer"><!--ページ下部のフッター部分 -->
+            フッター<!-- 表示テキスト:フッター -->
+        </footer>
+    </div><!-- レイアウト全体(.layoutコンテナ)の終了タグ-->
+</body><!--ページ本文の終了 -->
+
+</html><!--HTML文書の終了-->

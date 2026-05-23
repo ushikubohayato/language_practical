@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>株式会社アールピーシー</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body id="top">
+    <div class="layout">
+        <header class="site-header">
+            <h3 class="logo">R</h3>
+            <h3>RPCホーム</h3>
+        </header>
+
+        <aside class="sidebar">
+            <a href="#card">カード</a><br>
+            <a href="#form">フォーム</a><br>
+            <a href="#flexBox">FlexBox</a><br>
+            <a href="#responsive">レスポンシブ</a><br>
+        </aside>
+
+        <nav class="side">
+            <h3>ジャンプ先</h3>
+            <aside class="nav">
+                <a href="#card">カード</a><br>
+                <a href="#form">フォーム</a><br>
+                <a href="#flexBox">FlexBox</a><br>
+                <a href="#responsive">レスポンシブ</a><br>
+            </aside>
+        </nav>
+        <main class="main">
+            <h1>デザイン</h1>
+            <article class="box" id="card"><!-- 1つのコンテンツブロック(記事やカード)を表す要素 -->
+                <h3 class="ribbon">カード</h3><!-- 小見出し(カードタイトル)。 「eibbon」は装飾クラス -->
+                <p>margin / border / padding / shadow / radius / background / typography</p><!--カード内の説明文-->
+                <div class="cluster"><!--ボタン軍を横並びなどで配置するためのグループ要素 -->
+                    <button class="btn">色のあるボタン</button><!--通常のボタン-->
+                    <button class="btn btn--ghost">色のないボタン</button><!--枠線だけのボタン(ゴーストボタン)-->
+                    <button class="btn" disabled>無効ボタン</button><!--押せない(無効化された)ボタン -->
+                </div><!--cluster終了-->
+            </article><!--box終了-->
+
+            <form id="form">
+                <h1>フォーム</h1>
+                <h3>名前</h3>
+                <input type="text" placeholder="フォーカスで枠を強調">
+
+                <div class="gender">
+                    <h3>性別(テキスト部分も選択可,チェックした項目は背景色を変化)</h3>
+                    <div class="gendertype">
+                        <input type="radio" name="gender" id="man" value="man">
+                        <label for="man">男性</label><br>
+                    </div>
+                    <div class="gendertype">
+                        <input type="radio" name="gender" id="woman" value="woman">
+                        <label for="woman">女性</label><br>
+                    </div>
+                    <div class="gendertype">
+                        <input type="radio" name="gender" id="lgbt" value="lgbt">
+                        <label for="lgbt">その他</label><br>
+                    </div>
+                </div>
+
+                <h3>都道府県(フォーカス枠で強調)</h3>
+                <select name="prefecture">
+                    <option value="0">選択してください</option>
+                    <option value="1">北海道</option>
+                    <option value="2">青森県</option>
+                    <option value="3">岩手県</option>
+                    <option value="4">宮城県</option>
+                    <option value="5">秋田県</option>
+                    <option value="6">山形県</option>
+                    <option value="7">福島県</option>
+                    <option value="8">茨城県</option>
+                    <option value="9">栃木県</option>
+                    <option value="10">群馬県</option>
+                    <option value="11">埼玉県</option>
+                    <option value="12">千葉県</option>
+                    <option value="13">東京都</option>
+                    <option value="14">神奈川県</option>
+                    <option value="15">新潟県</option>
+                    <option value="16">富山県</option>
+                    <option value="17">石川県</option>
+                    <option value="18">福井県</option>
+                    <option value="19">山梨県</option>
+                    <option value="20">長野県</option>
+                    <option value="21">岐阜県</option>
+                    <option value="22">静岡県</option>
+                    <option value="23">愛知県</option>
+                    <option value="24">三重県</option>
+                    <option value="25">滋賀県</option>
+                    <option value="26">京都府</option>
+                    <option value="27">大阪府</option>
+                    <option value="28">兵庫県</option>
+                    <option value="29">奈良県</option>
+                    <option value="30">和歌山県</option>
+                    <option value="31">鳥取県</option>
+                    <option value="32">島根県</option>
+                    <option value="33">岡山県</option>
+                    <option value="34">広島県</option>
+                    <option value="35">山口県</option>
+                    <option value="36">徳島県</option>
+                    <option value="37">香川県</option>
+                    <option value="38">愛媛県</option>
+                    <option value="39">高知県</option>
+                    <option value="40">福岡県</option>
+                    <option value="41">佐賀県</option>
+                    <option value="42">長崎県</option>
+                    <option value="43">熊本県</option>
+                    <option value="44">大分県</option>
+                    <option value="45">宮崎県</option>
+                    <option value="46">鹿児島県</option>
+                    <option value="47">沖縄県</option>
+                </select><br>
+
+                <div class="endtask">
+                    <h3>完了課題(テキスト部分も選択可,チェックした項目は背景色を変化)</h3>
+                    <div class="taskcheck">
+                        <input id="end1" type="checkbox" name="endtask1" value="html">
+                        <label for="end1">
+                            HTML
+                        </label><br>
+                    </div>
+
+                    <div class="taskcheck">
+                        <input id="end2" type="checkbox" name="endtask2" value="css">
+                        <label for="end2">
+                            CSS
+                        </label><br>
+                    </div>
+                    <div class="taskcheck">
+                        <input id="end3" type="checkbox" name="endtask3" value="javascript">
+                        <label for="end3">
+                            JavaScript
+                        </label><br>
+                    </div>
+                </div>
+                <h3>自己紹介</h3>
+                <textarea placeholder="フォーカスで枠を強調"></textarea>
+            </form>
+
+            <h3>FlexBox</h3>
+            <div class="flexBox" id="flexBox">
+                <ul>
+                    <li>#CSS</li>
+                    <li>#html</li>
+                    <li>#javascript</li>
+                    <li>#Flexbox</li>
+                    <li>#Grid</li>
+                    <li>#MediaQueries</li>
+                    <li>#ContainerQueries</li>
+                </ul>
+            </div>
+
+            <h3>カードレイアウトでレスポンシブ</h3>
+            <div class="card" id="responsive">
+                <article class="box">
+                    <h3>Card A</h3>
+                    <p>space-betweenで等間隔</p>
+                </article>
+
+                <article class="box">
+                    <h3>Card B</h3>
+                    <p>720pxで並び変化</p>
+                </article>
+
+                <article class="box">
+                    <h3>Card C</h3>
+                    <p>フォーカスで枠を強調</p>
+                </article>
+
+                <article class="box">
+                    <h3>Card D</h3>
+                    <p>影と角丸でおしゃれに</p>
+                </article>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <span>©RPC</span>
+            <a href="#top">ページ上部へ</a>
+        </footer>
+    </div>
+</body>
+
+</html>

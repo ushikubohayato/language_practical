@@ -1,0 +1,13 @@
+.container{
+    display:flex; /* 府エックスボックスレイアウトを有効にする*/
+    /* align-items: flex-start; */ /* 子要素をコンテナの上橋(上揃え)に配置　*/
+    /* align-items: stretch; */ /*子要素の高さをコンテナの高さに合わせて自動で伸ばす */
+    align-items: flex-end; /*子要素をコンテナの下端(下揃え)に配置 */
+    width:500px; /*コンテナ全体の横幅を500pxに設定 */
+    height:100px;/* コンテナ全体の高さを100pxに設定 */
+    border:1px solid #000; /* コンテナの周囲に黒い1pxの実線枠を付ける(見た目の確認用) */
+}
+
+.item{
+    border: 1px solid #000; /*各アイテムの周囲に黒い1pxの枠線を付ける(配置位置を見やすくする) */
+}

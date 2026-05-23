@@ -1,0 +1,9 @@
+.container{
+    display:flex;
+    /* flex-direction: row;*/
+    flex-direction: column;
+}
+
+.item{
+    border:1px solid #000; /* 各アイテムの周囲に黒い1pxの実線をつける(アイテムの位置を確認しやすくする) */
+}
