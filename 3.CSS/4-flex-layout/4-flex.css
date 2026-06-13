@@ -1,5 +1,5 @@
 .container{
-    display:flex; /* 府エックスボックスレイアウトを有効にする*/
+    display:flex; /*フレックスボックスレイアウトを有効にする*/
     /* align-items: flex-start; */ /* 子要素をコンテナの上橋(上揃え)に配置　*/
     /* align-items: stretch; */ /*子要素の高さをコンテナの高さに合わせて自動で伸ばす */
     align-items: flex-end; /*子要素をコンテナの下端(下揃え)に配置 */
