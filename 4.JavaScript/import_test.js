@@ -7,6 +7,7 @@ window.onload = function () {
 }
 
 function submitButton(){
+    const answer = document.getElementById('answer')
     let textForm1 = Number(document.getElementById('text_form_1').value)
     let textForm2 = Number(document.getElementById('text_form_2').value)
     let calcType = getCalcType()
@@ -28,7 +29,7 @@ function submitButton(){
             alert('calc type was not selected.')
             return false;
     }
-    alert('結果は' + calcResult + 'です。')
+    answer.innerHTML = calcResult;
 }
 
 function getCalcType(){
