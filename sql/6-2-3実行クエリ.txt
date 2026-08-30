@@ -1,0 +1,3 @@
+sql_education=# insert into account(name) values('ac1');
+
+sql_education=# insert into account(name) values('ac2');

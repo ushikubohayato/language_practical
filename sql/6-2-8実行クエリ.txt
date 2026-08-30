@@ -1,0 +1,4 @@
+sql_education=# SELECT SUM(quantity) AS "2024年の注文数"
+sql_education-# FROM order_info
+sql_education-# INNER JOIN order_item
+sql_education-# ON order_info.order_info_id = order_item.order_id;

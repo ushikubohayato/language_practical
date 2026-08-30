@@ -1,0 +1,26 @@
+BEGIN
+
+INSERT 0 2
+
+ account_id | name
+------------+------
+          1 | ac1
+          2 | ac2
+          3 | ac3
+          4 | ac4
+(4 行)
+
+ account_id | name
+------------+------
+          1 | ac1
+          2 | ac2
+(2 行)
+
+ROLLBACK
+
+ account_id | name
+------------+------
+          1 | ac1
+          2 | ac2
+(2 行)
+

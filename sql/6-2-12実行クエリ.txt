@@ -1,0 +1,9 @@
+sql_education=# select order_info.order_info_id as "注文ID",
+sql_education-#        SUM(item.price * order_item.quantity) as "合計金額"
+sql_education-# FROM order_info
+sql_education-# LEFT JOIN order_item
+sql_education-#   ON order_info.order_info_id = order_item.order_id
+sql_education-# LEFT JOIN item
+sql_education-#   ON order_item.item_id = item.item_id
+sql_education-# GROUP BY order_info.order_info_id
+sql_education-# ORDER BY "合計金額" DESC;
