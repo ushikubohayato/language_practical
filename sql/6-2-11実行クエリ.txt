@@ -1,0 +1,6 @@
+sql_education=# select item.name as "製品名",SUM(quantity) as "注文合計数"
+sql_education-# from order_item
+sql_education-# INNER JOIN item
+sql_education-# ON order_item.item_id = item.item_id
+sql_education-# group by item.name
+sql_education-# order by "注文合計数" desc;

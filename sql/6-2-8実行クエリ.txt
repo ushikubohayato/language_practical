@@ -1,0 +1,4 @@
+sql_education=# select count(quantity) as "2024年の注文数"
+sql_education-# from order_info
+sql_education-# inner join order_item
+sql_education-# on order_info.order_info_id = order_item.order_id;

@@ -1,0 +1,22 @@
+sql_education=# create table account(
+sql_education(# account_id serial primary key,
+sql_education(# name character varying(50) not null);
+
+sql_education=# create table item(
+sql_education(# item_id serial primary key,
+sql_education(# name character varying(50) not null,
+sql_education(# price integer not null);
+
+sql_education=# create table order_info(
+sql_education(# order_info_id serial primary key,
+sql_education(# order_date date not null,
+sql_education(# account_id integer not null,
+sql_education(# foreign key(account_id) references account(account_id) on delete cascade);
+
+sql_education=# create table order_item(
+sql_education(# id serial primary key,
+sql_education(# order_id integer not null,
+sql_education(# item_id integer not null,
+sql_education(# quantity int not null,
+sql_education(# foreign key(order_id) references order_info(order_info_id) on delete cascade,
+sql_education(# foreign key(item_id) references item(item_id) on delete restrict);
