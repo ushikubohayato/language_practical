@@ -16,6 +16,10 @@ sql_education-# (5,8,5),
 sql_education-# (5,4,2),
 sql_education-# (5,1,2);
 
+sql_education=# update order_item
+sql_education-# set item_id = 3
+sql_education-# where id = 10;
+
 sql_education-# select * from order_info;
 
 sql_education=# select * from order_item;
