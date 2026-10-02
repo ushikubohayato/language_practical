@@ -1,0 +1,6 @@
+sql_education=# insert into item(name,price) values('にんじん',58),
+sql_education-# ('バナナ',198),
+sql_education-# ('カップラーメン',158),
+sql_education-# ('キャベツ',200);
+
+select * from item;

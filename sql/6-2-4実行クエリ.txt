@@ -1,0 +1,9 @@
+sql_education-# insert into item(name,price) values('牛乳',198);
+
+sql_education-# insert into item(name,price) values('食パン',158);
+
+sql_education-# insert into item(name,price) values('卵',228);
+
+sql_education-# insert into item(name,price) values('米',1980);
+
+sql_education=# select * from item;

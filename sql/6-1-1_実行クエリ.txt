@@ -1,0 +1,19 @@
+postgres=# \l
+
+postgres=# create database sql_education;
+
+postgres=# \l
+
+postgres=# \c sql_education
+
+sql_education=# select current_database(),current_schema();
+
+sql_education=# \dn
+
+sql_education=# create schema sql_education;
+
+sql_education=# \dn
+
+sql_education=# set search_path to sql_education;
+
+sql_education=# SELECT current_database(),current_schema();

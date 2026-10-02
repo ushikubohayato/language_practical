@@ -1,0 +1,14 @@
+sql_education=# begin;
+
+sql_education=*# insert into account(name) values('ac3'),('ac4');
+
+sql_education=*# select * from account;
+
+sql_education=# select * from account;
+
+sql_education=*# rollback;
+
+sql_education=# select * from account;
+
+
+

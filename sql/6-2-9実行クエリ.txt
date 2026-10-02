@@ -1,0 +1,6 @@
+sql_education=# select order_date as "ac1の注文日付"
+sql_education-# from order_info
+sql_education-# where account_id = (
+sql_education(# select account_id
+sql_education(# from account
+sql_education(# where name = 'ac1');

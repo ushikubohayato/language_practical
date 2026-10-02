@@ -1,0 +1,4 @@
+sql_education=# select item_id as 製品ID,name as 製品名,price as 値段
+sql_education-# from item
+sql_education-# where price < 200
+sql_education-# order by price desc;

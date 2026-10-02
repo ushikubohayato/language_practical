@@ -1,0 +1,6 @@
+sql_education=# select order_id AS "注文ID"
+sql_education-# from order_item
+sql_education-# INNER JOIN item
+sql_education-# ON order_item.item_id = item.item_id
+sql_education-# where item.name = 'キャベツ'
+sql_education-# or item.name = 'にんじん';

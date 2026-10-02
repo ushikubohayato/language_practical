@@ -1,0 +1,12 @@
+sql_education=# select account.account_id as "ユーザーID",
+sql_education-# account.name as "ユーザー名",
+sql_education-# sum(item.price * order_item.quantity) as "合計金額"
+sql_education-# from account
+sql_education-# inner join order_info
+sql_education-# on account.account_id = order_info.account_id
+sql_education-# inner join order_item
+sql_education-# on order_info.order_info_id = order_item.order_id
+sql_education-# inner join item
+sql_education-# on order_item.item_id = item.item_id
+sql_education-# group by account.account_id,account.name
+sql_education-# order by account.account_id asc;

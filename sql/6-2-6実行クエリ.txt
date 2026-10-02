@@ -1,0 +1,25 @@
+sql_education=# insert into order_info(account_id,order_date)
+sql_education-# values(1,'2024-12-30'),
+sql_education-# (1,'2025-01-20'),
+sql_education-# (2,'2024-12-31'),
+sql_education-# (2,'2025-01-20'),
+sql_education-# (2,'2025-04-01');
+
+sql_education=# insert into order_item(order_id,item_id,quantity)
+sql_education-# values(3,3,10),
+sql_education-# (3,7,5),
+sql_education-# (3,2,5),
+sql_education-# (4,4,10),
+sql_education-# (4,7,1),
+sql_education-# (4,6,2),
+sql_education-# (5,8,5),
+sql_education-# (5,4,2),
+sql_education-# (5,1,2);
+
+sql_education=# update order_item
+sql_education-# set item_id = 3
+sql_education-# where id = 10;
+
+sql_education-# select * from order_info;
+
+sql_education=# select * from order_item;
